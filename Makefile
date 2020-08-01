@@ -13,6 +13,7 @@ install:
 		pip install -r requirements.txt
 
 docker-build:
-	# add commands if require
+	# This will “tag” the image my-python-app and build it
+	docker build --tag my-python-app
 docker-push:
 	# add commands if require
