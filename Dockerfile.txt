@@ -1,4 +1,6 @@
-FROM ubuntu:18.04
+FROM python:alpine3.7
 COPY . /app
-RUN make /app
-CMD python /app/app.py
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 8000
+CMD python ./app.py
