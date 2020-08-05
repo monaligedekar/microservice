@@ -13,6 +13,8 @@ install:
 		pip install -r requirements.txt
 
 docker-build:
-	# add commands if require
+	# This should create docker image
+	docker build -t monali1307/testapp:latest .
 docker-push:
-	# add commands if require
+	# This should push the image on docker hub
+	docker push monali1307/testapp:latest
